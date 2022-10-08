@@ -24,6 +24,20 @@ section {
     margin-bottom: 25px;
     align-items: center;
 }
+.devinfo {
+    color: black;
+    font-size: 14px;
+    /* background-color: rgba(rgb(247, 85, 85), rgb(12, 217, 12), rgb(17, 17, 226), alpha); */
+    
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .heading {
     color: crimson;
 }
