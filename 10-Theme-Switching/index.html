@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switching</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+.switchTheme {
+    background-color: black;
+    color: white;
+}
+
+        .position {
+            position: relative;
+            float: right;
+            top: 10px;
+        }
+        .text-area {
+            display: flex;
+            width: 80%;
+            gap: 20px;
+            margin: auto;
+        }
+        .devinfo {
+            color: red;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- toggle > -->
+<button class="position" onclick="themeFunction()">Switch Theme</button>
+    <!-- toggle < -->
+    <br> <br>
+    <div class="text-area">
+        <div>
+            <h3>
+                Jaishankar inaugurates new Indian High Commission Chancery in Wellington
+            </h3>
+            <p>
+                External Affairs Minister S Jaishankar on October 9, 2022 inaugurated the new Indian High Commission Chancery in Wellington and said that playing with each other's strengths is a more sensible way of growing the important relationship between India and New Zealand.
+
+Mr. Jaishankar, who is in Wellington on his first visit to New Zealand as the External Affairs Minister, also said that the relationship between both countries is "due for an update", and "due for refresh".
+
+"Inaugurated the new Indian High Commission Chancery in Wellington today. Three Ministerial visits in a short span of time reflect our shared desire to grow India-New Zealand ties and make them fit for purpose," Mr. Jaishankar tweeted on October 9, 2022.
+
+The relationship between India and New Zealand "draws strength from the vision and commitment of our Prime Ministers @narendramodi and @jacindaardern," he tweeted.
+            </p>
+            
+        </div>
+
+        <div>
+            <h3>
+                Jaishankar inaugurates new Indian High Commission Chancery in Wellington
+            </h3>
+            <p>
+                External Affairs Minister S Jaishankar on October 9, 2022 inaugurated the new Indian High Commission Chancery in Wellington and said that playing with each other's strengths is a more sensible way of growing the important relationship between India and New Zealand.
+
+Mr. Jaishankar, who is in Wellington on his first visit to New Zealand as the External Affairs Minister, also said that the relationship between both countries is "due for an update", and "due for refresh".
+
+"Inaugurated the new Indian High Commission Chancery in Wellington today. Three Ministerial visits in a short span of time reflect our shared desire to grow India-New Zealand ties and make them fit for purpose," Mr. Jaishankar tweeted on October 9, 2022.
+
+The relationship between India and New Zealand "draws strength from the vision and commitment of our Prime Ministers @narendramodi and @jacindaardern," he tweeted.
+            </p>
+        </div>
+
+    </div>
+    <p class="devinfo">Made With 
+        ❤️ by ProgrammingWithAryan</p>
+</body>
+</html>
+<script>
+function themeFunction() {
+    var theme = document.body;
+    theme.classList.toggle("switchTheme");
+}
+</script>
