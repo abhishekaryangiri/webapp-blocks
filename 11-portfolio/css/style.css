@@ -61,6 +61,14 @@ a, a:hover, a:active {
 .clearfix:after {
     clear: both;
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 1fr);
+    /* border: 1px solid red; */
+    margin-left: 150px;
+}
+
 
 /* Common style */
 .grid figure {
@@ -717,6 +725,12 @@ img {
 }
 
 /* no transition on .isotope container */
+
+/* .isotope {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+} */
 
 .isotope .isotope-item {
   /* change duration value to whatever you like */
@@ -1417,11 +1431,11 @@ border: 1px solid #CE1139;
 /* Portfolio Items */	
 
 #portfolio_wrapper {
-    position: relative;
+    /* position: relative;
     padding: 0;
     width: 100%;
     margin: 0 auto;
-    display: block;
+    display: block; */
 }
 
 #portfolio_wrapper .one-four {
