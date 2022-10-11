@@ -5,12 +5,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css"> </head>
+	<title>Typing Speed Test</title>
+	<link rel="stylesheet" href="./style.css">
 
 <!-- ss -->
 
 <body>
+
+	   <div class="topright"> <button id="dark1" onclick="myFunction()">dark mode</button> 
+    </div>
+
+
 	<div class="mainDiv">
 		<div class="centerDiv">
 			<h1>Welcome To Typing Speed Test Website
@@ -24,4 +29,11 @@
 
 </body>
 </html>
-<script src="script.js"></script>
+<script>
+	function themeFunction() {
+    var theme = document.body;
+    theme.classList.toggle("switchTheme");
+}
+
+</script>
+<script src="./script.js"></script>
