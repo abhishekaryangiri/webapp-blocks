@@ -1,3 +1,9 @@
+
+body {
+  background-color: white;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +15,17 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  margin-top: -30px;
 }
 
 
 .devinfo {
-  color: black;
+  color: red;
   font-size: 14px;
   /* background-color: rgba(rgb(247, 85, 85), rgb(12, 217, 12), rgb(17, 17, 226), alpha); */
-  margin-top: 10px;
   text-align: center;
   cursor: pointer;
+  margin-top: -20px;
 }
 a{
   text-decoration: none;
@@ -71,4 +78,41 @@ textarea {
   background: #ecf0f1;
   border: 5px solid #2980b9;
   cursor: pointer;
+}
+
+
+
+.topright {
+  text-align: center;
+  margin: auto;
+  top: 8px;
+  right: 15px;
+  font-size: 18px;
+  color: black;
+
+}
+
+.dark-mode {
+  background-color: black;
+  
+}
+
+/* #light1{
+  border: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+} */
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#dark1{
+  border: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* background-color: white; */
 }
