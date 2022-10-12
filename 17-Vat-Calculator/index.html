@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1024">
+	<link rel="stylesheet" href="style.css">
+	<title>VAT Calculator</title>
+</head>
+
+<body>
+	<div class="main-container">
+		<h2>VAT Calculator</h2>
+		<div class="sec-container">
+			<form action="">
+				<div>
+					<label for="initial-price">Net Price</label>
+					<input type="number" name="" id="initial-price" min="0.00" placeholder="0.00" /> </div>
+				<div>
+					<label for="vat-rate">VAT Rate (%) </label>
+					<input type="number" name="" id="vat-rate" min="0.00" placeholder="0.00" /> </div>
+				<div>
+					<label for="vat-added">VAT Added </label>
+					<input type="number" min="0.00" name="" id="vat-added" placeholder="0.00" disabled=true /> </div>
+				<div>
+					<label for="inc-amount">VAT Inclusive Price </label>
+					<input type="number" min="0.00" name="" id="inc-amount" placeholder="0.00" disabled=true /> </div>
+			</form>
+		</div>
+		<div class="button-design">
+			<button type="button" class="primary-btn" id="sec-btn"> Calculate</button>
+			<button type="button" class="primary-btn" id="reset-btn">Reset</button>
+		</div>
+	</div>
+	<p class="devinfo">Made with ❤️ by <a href="https://www.linkedin.com/in/abhishek-aryan-aab000107/">Abhishek Aryana Giri</a> </p>
+	<script src="script.js"></script>
+</body>
+
+</html>

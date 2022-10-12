@@ -1,5 +1,5 @@
 const sentences = [
-	"After all, you're only an immortal until someone manages to kill you. After that, you were just long-lived. As long as poverty, injustice and gross inequality persist in our world, none of us can truly rest.",
+	"You can test your typing speed in wpm on English and impress your friends or employers with your own typing certificate. Test your typing speed, and find out how fast you type, and then improve your typing speed if necessary.",
 
 
 // hh
