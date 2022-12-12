@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paymentUI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="paymentform">
+        <h1>Payment</h1>
+        <div class="headers">
+            <h4 class="account">Account
+            <hr>
+            </h4>
+            <h4 class="payment"> Payment
+            <hr>
+            </h4>
+        </div>
+        <div class="savedcards">
+            <h4>Saved Cards:</h4>
+            <div class="mastercard">
+                <label for="mastercard">
+                    <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png"
+                        alt="mastercard.jpg">
+                </label>
+                <input type="tel" name="mastercard" id="mastercard" value="xxxx xxxx xxxx 4357" disabled
+                    oncopy="return false" oncut="return false"></input>
+                <a href="#">Remove Card</a>
+            </div>
+            <div class="visacard">
+                <label for="visacard">
+                    <img src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png" alt="mastercard.jpg">
+                </label>
+                <input type="tel" name="mastercard" id="mastercard" value="xxxx xxxx xxxx 5467" disabled
+                    oncopy="return false" oncut="return false"></input>
+                <a href="#">Remove Card</a>
+            </div>
+        </div>
+        <div class="addnewcard">
+            <h4>Add New Card:</h4>
+            <form action="#">
+                <div class="nameoncard">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Name on Card" minlength="10" maxlength="25" required>
+                </div>
+                <div class="row">
+                    <div class="cardnumber">
+                        <label for="cc-number"></label>
+                        <input type="tel" name="cc-number" id="cc-number" placeholder="Card Number" pattern="[1-9]{12}"
+                            maxlength="12" required>
+                    </div>
+                    <div class="Exp-Date">
+                        <label for="expdate"></label>
+                        <input type="month" name="exp-date" id="expdate" placeholder="Exp-Date" value="2022-11" required>
+                    </div>
+                    <div class="cvv">
+                        <label for="cvv"></label>
+                        <input type="tel" name="cvv" id="cvv" placeholder="CVV" maxlength="3" required>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Add New Card" >
+                </div>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
