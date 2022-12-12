@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.6rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-image: linear-gradient(140deg, #f8f8f8 0%, #022f16 100%); */
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.paymentform {
+    background-color: white;
+    /* width: 32vw; */
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin-inline: auto;
+    margin-top: 80px; */
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 6px;
+
+    /* opacity: 0.9; */
+    width: 470px;
+    /* height: auto; */
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* padding: 20px;
+    border-radius: 8px; */
+}
+
+.paymentform h1 {
+    font-size: 4rem;
+    width: 60%;
+    margin-inline: auto;
+}
+
+.paymentform .headers {
+    display: inline-flex;
+    width: 65%;
+    margin-inline: auto;
+}
+
+.paymentform .headers h4 {
+    margin: 18px 20px;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    margin-inline: auto;
+}
+
+.paymentform .headers h4 hr {
+    display: block;
+    background-color: black;
+    padding: 0.07rem;
+    border-radius: 2px;
+    border-style: none;
+    margin-top: 8px;
+    width: 7.5rem;
+    transition: linear;
+}
+
+.paymentform .headers h4:hover hr {
+    padding: 0.18rem;
+    background-color: white;
+}
+.paymentform .headers .payment:hover.payment {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.paymentform .headers .account:hover.account {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.paymentform .savedcards,
+.addnewcard {
+    width: 80%;
+    text-align: left;
+    margin: 15px auto;
+    margin-inline: auto;
+    padding-bottom: 10px;
+}
+
+.paymentform .savedcards h4,
+.addnewcard h4 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.paymentform .savedcards .mastercard,
+.visacard {
+    display: flex;
+    width: 90%;
+    padding: 12px 0px;
+    background-color: rgb(247, 252, 253);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 16px;
+}
+
+.paymentform .savedcards .mastercard img,
+.visacard img {
+    width: 35px;
+    margin: 0px;
+    padding: 0;
+}
+
+.paymentform .savedcards .mastercard img {
+    height: 33px;
+}
+
+.paymentform .savedcards .mastercard label,
+.visacard label {
+    padding: 0px 6px;
+}
+
+.paymentform .savedcards .mastercard input,
+.visacard input {
+    background-color: rgb(246, 254, 255);
+    border-style: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: not-allowed;
+    padding: 0px 8px;
+
+}
+
+.paymentform .savedcards .mastercard a,
+.visacard a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.paymentform .savedcards .mastercard a:active {
+    transform: translateY(0.08rem);
+}
+
+.paymentform .savedcards .visacard a:active {
+    transform: translateY(0.08rem);
+}
+
+
+.paymentform .addnewcard .nameoncard {
+    position: relative;
+    width: 90%;
+    height: 40px;
+    text-align: left;
+}
+.paymentform .addnewcard .row{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+}
+.paymentform .addnewcard .nameoncard input,
+.paymentform .addnewcard .row .cardnumber input,
+.paymentform .addnewcard .row .Exp-Date input, 
+.paymentform .addnewcard .row .cvv input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding:2px 2px;
+    border-bottom: 0.2rem solid grey;
+    /* height: 100%; */
+    box-shadow: none;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.paymentform .addnewcard .row .cardnumber input {
+    margin-right: 25px;
+}
+
+.paymentform .addnewcard .row .Exp-Date input {
+    width: 80%;
+    align-items: end;
+    margin-left: 18px;
+}
+.paymentform .addnewcard .row .cvv input {
+    width: 50%;
+    margin-left: 8px;
+}
+
+
+.paymentform .addnewcard .nameoncard input:focus::-webkit-input-placeholder {
+    transform: translateY(-2rem);
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    visibility: visible !important;
+}
+
+.paymentform .addnewcard .cardnumber input:focus::-webkit-input-placeholder {
+    transform: translateY(-2rem);
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    visibility: visible !important;
+}
+.paymentform .addnewcard .cvv input:focus::-webkit-input-placeholder {
+    transform: translateY(-2rem);
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    visibility: visible !important;
+}
+
+
+.paymentform .addnewcard .nameoncard input:focus {
+    border-bottom-color: rgb(91, 91, 91);
+    border-bottom-width: 2.5px;
+}
+
+.paymentform .addnewcard .cardnumber input:focus {
+    border-bottom-color: rgb(91, 91, 91);
+    border-bottom-width: 2.5px;
+}
+.paymentform .addnewcard .cvv input:focus {
+    border-bottom-color: rgb(91, 91, 91);
+    border-bottom-width: 2.5px;
+}
+
+.paymentform .addnewcard .nameoncard input:focus:invalid {
+    border-bottom-color: red;
+}
+
+.paymentform .addnewcard .cardnumber input:focus:invalid {
+    border-bottom-color: red;
+}
+.paymentform .addnewcard .cvv input:focus:invalid {
+    border-bottom-color: red;
+}
+
+.paymentform .addnewcard .nameoncard input:valid {
+    border-bottom-color: rgb(0, 63, 19);
+    border-bottom-width: 2.5px;
+}
+
+.paymentform .addnewcard .cardnumber input:valid {
+    border-bottom-color: rgb(0, 63, 19);
+    border-bottom-width: 2.5px;
+}
+.paymentform .addnewcard .cvv input:valid {
+    border-bottom-color: rgb(0, 63, 19);
+    border-bottom-width: 2.5px;
+}
+
+
+.paymentform .addnewcard .submit{
+    width: 100%;
+    margin-top: 70px;
+    margin-inline: auto;  
+}
+.paymentform .addnewcard .submit input{
+    width: 100%;
+    text-decoration: none;
+    height: 50px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgb(67, 156, 49);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.paymentform .addnewcard .submit input:active{
+    transform: translateY(0.12rem);
+}
+
+
+@media screen and (max-width:540px){
+    .paymentform {
+        width: 440px;
+        height: auto;
+    }
+}
